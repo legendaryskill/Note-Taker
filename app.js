@@ -6,7 +6,7 @@ const path = require("path")
 const { v4: uuidv4 } = require('uuid');
 
 // setting up the port
-const PORT = 8080
+var PORT = process.env.PORT || 8080
 
 const db_path = path.join(__dirname, '/db/db.json')
 
